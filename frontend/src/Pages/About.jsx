@@ -123,7 +123,7 @@ const AboutPage = () => {
     const fetchAboutData = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:8000/api/about');
+        const response = await fetch('https://portfolio-alpha-ten-88.vercel.app/api/about');
         if (!response.ok) {
           throw new Error('Failed to fetch about data');
         }

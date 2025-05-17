@@ -40,7 +40,7 @@ const ContactPage = () => {
     });
 
     try {
-      const response = await fetch('http://localhost:8000/api/contact', {
+      const response = await fetch('https://portfolio-alpha-ten-88.vercel.app/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

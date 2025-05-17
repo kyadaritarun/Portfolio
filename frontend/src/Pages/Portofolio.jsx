@@ -148,7 +148,7 @@ export default function FullWidthTabs() {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:8000/api/projects'); // Update with your backend URL
+      const response = await fetch('https://portfolio-alpha-ten-88.vercel.app/api/projects'); // Update with your backend URL
       if (!response.ok) {
         const errorText = await response.text();
         throw new Error(`Failed to fetch projects: ${response.status} ${response.statusText} - ${errorText}`);

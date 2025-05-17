@@ -106,7 +106,7 @@ const ProjectDetails = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await fetch(`http://localhost:8000/api/projects/${id}`);
+        const response = await fetch(`https://portfolio-alpha-ten-88.vercel.app/api/projects/${id}`);
         console.log('API Response Status:', response.status); // Debug: Log response status
         if (!response.ok) {
           const errorText = await response.text();
