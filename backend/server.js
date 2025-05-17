@@ -15,7 +15,7 @@ const _diname = path.resolve();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173', // Replace with your frontend URL
+  origin: 'https://bespoke-dusk-0e4432.netlify.app/', // Replace with your frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }));
