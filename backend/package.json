@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "npm install --legacy-peer-deps && react-scripts build",
-    "start": "nodemon backend/server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
