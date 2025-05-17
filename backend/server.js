@@ -4,7 +4,6 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const techStacks = require("./models/TechStack");
 const About = require('./models/About');
-const path = require("path");
 dotenv.config();
 
 const app = express();
@@ -19,7 +18,7 @@ app.use(cors({
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }));
-app.use(express.static(path.join(_diname,"/frontend/dist")));
+
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
