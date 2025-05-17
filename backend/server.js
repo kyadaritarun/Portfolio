@@ -8,13 +8,12 @@ dotenv.config();
 
 const app = express();
 
-const _diname = path.resolve();
 
 // Middleware
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://bespoke-dusk-0e4432.netlify.app/', // Replace with your frontend URL
+  origin: 'http://localhost:5173/', // Replace with your frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }));
