@@ -6,7 +6,7 @@
   "scripts": {
     "start": "serve -s build",
     "dev": "vite  ",
-    "build": "npm install --legacy-peer-deps",
+    "build": "npm install --legacy-peer-deps && react-scripts build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
