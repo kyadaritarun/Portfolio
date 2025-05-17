@@ -198,8 +198,11 @@ app.get('/api/techstacks', async (req, res) => {
   }
 });
 
-app.get ( "*" ,(req,res) => {
-    res.sendFile(path.resolve(_diname,"frontend","dist","index.html"))
+app.get ( "/",(req,res) => {
+    res.send({
+      activeStatus:true,
+      error:false,
+    })
 });
 
 // Start Server
